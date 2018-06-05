@@ -1,0 +1,38 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'CO_Costs',
+    'varName' => 'CO_Costs',
+    'orderBy' => 'co_costs.name',
+    'whereClauses' => array (
+  'opportunity_c' => 'co_costs.opportunity_c',
+  'amount' => 'co_costs.amount',
+  'probability' => 'co_costs.probability',
+),
+    'searchInputs' => array (
+  1 => 'opportunity_c',
+  2 => 'amount',
+  3 => 'probability',
+),
+    'searchdefs' => array (
+  'opportunity_c' => 
+  array (
+    'type' => 'relate',
+    'studio' => 'visible',
+    'label' => 'LBL_OPPORTUNITY',
+    'id' => 'OPPORTUNITY_ID_C',
+    'link' => true,
+    'width' => '10%',
+    'name' => 'opportunity_c',
+  ),
+  'amount' => 
+  array (
+    'name' => 'amount',
+    'width' => '10%',
+  ),
+  'probability' => 
+  array (
+    'name' => 'probability',
+    'width' => '10%',
+  ),
+),
+);

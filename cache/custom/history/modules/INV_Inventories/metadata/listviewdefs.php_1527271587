@@ -1,0 +1,129 @@
+<?php
+$module_name = 'INV_Inventories';
+$OBJECT_NAME = 'INV_INVENTORIES';
+$listViewDefs [$module_name] = 
+array (
+  'NAME' => 
+  array (
+    'width' => '30%',
+    'label' => 'LBL_LIST_SALE_NAME',
+    'link' => true,
+    'default' => true,
+  ),
+  'SALES_STAGE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_LIST_SALE_STAGE',
+    'default' => true,
+  ),
+  'AMOUNT' => 
+  array (
+    'type' => 'currency',
+    'label' => 'LBL_AMOUNT',
+    'currency_format' => true,
+    'width' => '10%',
+    'default' => true,
+  ),
+  'LOCATION_C' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_LOCATION',
+    'id' => 'FP_EVENT_LOCATIONS_ID_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'CATEGORY_C' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_CATEGORY',
+    'id' => 'AOS_PRODUCT_CATEGORIES_ID_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'INV_INVENTORIES_TYPE' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_TYPE',
+    'default' => false,
+  ),
+  'DESCRIPTION' => 
+  array (
+    'type' => 'text',
+    'label' => 'LBL_DESCRIPTION',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => false,
+  ),
+  'LEAD_SOURCE' => 
+  array (
+    'width' => '15%',
+    'label' => 'LBL_LEAD_SOURCE',
+    'default' => false,
+  ),
+  'NEXT_STEP' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_NEXT_STEP',
+    'default' => false,
+  ),
+  'PROBABILITY' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_PROBABILITY',
+    'default' => false,
+  ),
+  'MODEL_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => false,
+    'label' => 'LBL_MODEL',
+    'width' => '10%',
+  ),
+  'PNAME_C' => 
+  array (
+    'type' => 'relate',
+    'default' => false,
+    'studio' => 'visible',
+    'label' => 'LBL_PNAME',
+    'id' => 'AOS_PRODUCTS_ID1_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'ASSIGNED_USER_NAME' => 
+  array (
+    'width' => '5%',
+    'label' => 'LBL_LIST_ASSIGNED_USER',
+    'module' => 'Employees',
+    'id' => 'ASSIGNED_USER_ID',
+    'default' => false,
+  ),
+  'DATE_CLOSED' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_LIST_DATE_CLOSED',
+    'default' => false,
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_DATE_ENTERED',
+    'default' => false,
+  ),
+  'CREATED_BY_NAME' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_CREATED',
+    'default' => false,
+  ),
+  'MODIFIED_BY_NAME' => 
+  array (
+    'width' => '5%',
+    'label' => 'LBL_MODIFIED',
+    'default' => false,
+  ),
+);
+?>

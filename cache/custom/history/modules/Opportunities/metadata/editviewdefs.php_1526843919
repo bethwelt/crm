@@ -1,0 +1,173 @@
+<?php
+$viewdefs ['Opportunities'] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '1',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'javascript' => '{$PROBABILITY_SCRIPT}',
+      'useTabs' => true,
+      'tabDefs' => 
+      array (
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => true,
+          'panelDefault' => 'expanded',
+        ),
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+      'syncDetailEditViews' => true,
+    ),
+    'panels' => 
+    array (
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'name',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'currency_id',
+            'label' => 'LBL_CURRENCY',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 'opportunity_type',
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'amount',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 'description',
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'date_closed',
+          ),
+        ),
+      ),
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => '',
+        ),
+        1 => 
+        array (
+        ),
+        2 => 
+        array (
+          0 => '',
+        ),
+        3 => 
+        array (
+          0 => '',
+        ),
+        4 => 
+        array (
+          0 => 'sales_stage',
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 's_person_c',
+            'studio' => 'visible',
+            'label' => 'LBL_S_PERSON',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'client_c',
+            'label' => 'LBL_CLIENT',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 'probability',
+        ),
+        8 => 
+        array (
+          0 => 'next_step',
+        ),
+        9 => 
+        array (
+          0 => 
+          array (
+            'name' => 'apfee_c',
+            'studio' => 'visible',
+            'label' => 'LBL_APFEE',
+          ),
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gmamount_c',
+            'label' => 'LBL_GMAMOUNT',
+          ),
+        ),
+        11 => 
+        array (
+          0 => 
+          array (
+            'name' => 'negamount_c',
+            'label' => 'LBL_NEGAMOUNT',
+          ),
+        ),
+        12 => 
+        array (
+          0 => 
+          array (
+            'name' => 'country_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COUNTRY',
+          ),
+        ),
+        13 => 
+        array (
+          0 => 
+          array (
+            'name' => 'gmperc_c',
+            'label' => 'LBL_GMPERC',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>

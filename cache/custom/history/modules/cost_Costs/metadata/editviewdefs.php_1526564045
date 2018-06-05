@@ -1,0 +1,161 @@
+<?php
+$module_name = 'cost_Costs';
+$_object_name = 'cost_costs';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'javascript' => '{$PROBABILITY_SCRIPT}',
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'LBL_SALE_INFORMATION' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'lbl_sale_information' => 
+      array (
+        0 => 
+        array (
+          0 => 'name',
+          1 => 'currency_id',
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'cclient_c',
+            'label' => 'LBL_CCLIENT',
+          ),
+          1 => 'amount',
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'pamount_c',
+            'label' => 'LBL_PAMOUNT',
+          ),
+          1 => 
+          array (
+            'name' => 'country_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COUNTRY',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 'date_closed',
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'assigned_user_name',
+            'displayParams' => 
+            array (
+              'required' => true,
+            ),
+          ),
+          1 => 
+          array (
+            'name' => 'amount_usdollar',
+            'comment' => 'Formatted amount of the sale',
+            'label' => 'LBL_AMOUNT_USDOLLAR',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'fr_supplier_c',
+            'studio' => 'visible',
+            'label' => 'LBL_FR_SUPPLIER',
+          ),
+          1 => 
+          array (
+            'name' => 'f_agent_c',
+            'studio' => 'visible',
+            'label' => 'LBL_F_AGENT',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'ccost_c',
+            'label' => 'LBL_CCOST',
+          ),
+          1 => 
+          array (
+            'name' => 'f_cost_c',
+            'label' => 'LBL_F_COST',
+          ),
+        ),
+        7 => 
+        array (
+          0 => 
+          array (
+            'name' => 'f_supplier_c',
+            'studio' => 'visible',
+            'label' => 'LBL_F_SUPPLIER',
+          ),
+          1 => 
+          array (
+            'name' => 'fr_amount_c',
+            'label' => 'LBL_FR_AMOUNT',
+          ),
+        ),
+        8 => 
+        array (
+          0 => 
+          array (
+            'name' => 'pac_amount_c',
+            'label' => 'LBL_PAC_AMOUNT',
+          ),
+        ),
+        9 => 
+        array (
+          0 => '',
+          1 => '',
+        ),
+        10 => 
+        array (
+          0 => 
+          array (
+            'name' => 'psupply_c',
+            'studio' => 'visible',
+            'label' => 'LBL_PSUPPLY',
+          ),
+          1 => 
+          array (
+            'name' => 't_cost_c',
+            'label' => 'LBL_T_COST',
+          ),
+        ),
+      ),
+    ),
+  ),
+);
+?>

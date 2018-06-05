@@ -1,0 +1,132 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'cost_Costs',
+    'varName' => 'cost_Costs',
+    'orderBy' => 'cost_costs.name',
+    'whereClauses' => array (
+  'name' => 'cost_Costs.name',
+),
+    'searchInputs' => array (
+  0 => 'name',
+),
+    'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'width' => '30%',
+    'label' => 'LBL_LIST_SALE_NAME',
+    'link' => true,
+    'default' => true,
+    'name' => 'name',
+  ),
+  'PNAME_C' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_PNAME',
+    'id' => 'PARTN_PARTNERS_ID_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'PAMOUNT_C' => 
+  array (
+    'type' => 'currency',
+    'default' => true,
+    'label' => 'LBL_PAMOUNT',
+    'currency_format' => true,
+    'width' => '10%',
+  ),
+  'SUPPLIER_C' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_SUPPLIER',
+    'id' => 'SUP_SUPPLIRES_ID_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'FR_AMOUNT_C' => 
+  array (
+    'type' => 'currency',
+    'default' => true,
+    'label' => 'LBL_FR_AMOUNT',
+    'currency_format' => true,
+    'width' => '10%',
+  ),
+  'CCLIENT_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_CCLIENT',
+    'width' => '10%',
+  ),
+  'CCOST_C' => 
+  array (
+    'type' => 'currency',
+    'default' => true,
+    'label' => 'LBL_CCOST',
+    'currency_format' => true,
+    'width' => '10%',
+  ),
+  'COUNTRIES_C' => 
+  array (
+    'type' => 'dynamicenum',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_COUNTRIES',
+    'width' => '10%',
+  ),
+  'F_COST_C' => 
+  array (
+    'type' => 'currency',
+    'default' => true,
+    'label' => 'LBL_F_COST',
+    'currency_format' => true,
+    'width' => '10%',
+  ),
+  'T_COST_C' => 
+  array (
+    'type' => 'currency',
+    'default' => true,
+    'label' => 'LBL_T_COST',
+    'currency_format' => true,
+    'width' => '10%',
+  ),
+  'SALES_STAGE' => 
+  array (
+    'width' => '10%',
+    'label' => 'LBL_LIST_SALE_STAGE',
+    'default' => true,
+    'name' => 'sales_stage',
+  ),
+  'F_SUPPLIER_C' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_F_SUPPLIER',
+    'id' => 'BT_BANK_ID_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'PACSUPPLIER_C' => 
+  array (
+    'type' => 'relate',
+    'default' => true,
+    'studio' => 'visible',
+    'label' => 'LBL_PACSUPPLIER',
+    'id' => 'SUP_SUPPLIRES_ID1_C',
+    'link' => true,
+    'width' => '10%',
+  ),
+  'PAC_AMOUNT_C' => 
+  array (
+    'type' => 'currency',
+    'default' => true,
+    'label' => 'LBL_PAC_AMOUNT',
+    'currency_format' => true,
+    'width' => '10%',
+  ),
+),
+);
