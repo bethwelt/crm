@@ -1,0 +1,62 @@
+<style>
+.tabDetailView
+{
+    border-bottom:2px solid;
+    border-top:2px solid;
+    margin-bottom:10px;
+    margin-top:2px;
+    border-bottom-color:#ABC3D7;
+    border-top-color:#4E8CCF;
+}
+
+.tabDetailView td table td
+{
+    border: 0;
+    background: white;
+}
+
+.tabDetailView tr.pagination td
+{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom:1px solid #CBDAE6;
+}
+
+.tabDetailView tr.pagination td table td
+{
+    border: none;
+}
+
+.tabDetailViewDL
+{
+    background-color:#F6F6F6;
+    color:#000000;
+    border-bottom:1px solid #CBDAE6;
+    font-size:12px;
+    padding:5px 6px;
+    text-align:left;
+    vertical-align:top;
+}
+
+.tabDetailViewDF
+{
+    background-color:#FFFFFF;
+    color:#444444;
+    border-bottom:1px solid #CBDAE6;
+    font-size:12px;
+    padding:5px 10px 5px 8px;
+    vertical-align:top;
+}
+
+.listViewThS1
+{
+    background:#EBEBED none repeat scroll 0 0;
+    border-color:#CCCCCC -moz-use-text-color;
+    border-style:solid none;
+    border-width:1px medium;
+    font-size:11px;
+    font-weight:bold;
+    padding:4px 5px;
+    text-align:left;
+}
+    </style><table border="0" cellpadding="0" class="tabDetailView"><tr colspan="3">MySQL config Definitions:</tr><tr><th class="tabDetailViewDL"><b>name</b></th><th class="tabDetailViewDL"><b>type</b></th><th class="tabDetailViewDL"><b>len</b></th></tr><tr><td class="tabDetailViewDF">category</td><td class="tabDetailViewDF">varchar</td><td class="tabDetailViewDF">32</td></tr><tr><td class="tabDetailViewDF">name</td><td class="tabDetailViewDF">varchar</td><td class="tabDetailViewDF">32</td></tr><tr><td class="tabDetailViewDF">value</td><td class="tabDetailViewDF">text</td></tr></table><table border="0" cellpadding="0" class="tabDetailView"><tr colspan="3">MySQL config Keys:</tr><tr><th class="tabDetailViewDL"><b>name</b></th><th class="tabDetailViewDL"><b>type</b></th><th class="tabDetailViewDL"><b>fields</b></th></tr><tr><td class="tabDetailViewDF">idx_config_cat</td><td class="tabDetailViewDF">index</td><td class="tabDetailViewDF">category</td></tr></table><BR><BR><table border="0" cellpadding="0" class="tabDetailView"><tr><th class="tabDetailViewDL">#</th><th class="tabDetailViewDL">category</th><th class="tabDetailViewDL">name</th><th class="tabDetailViewDL">value</th></tr><tr><td class="tabDetailViewDL">1</td><td class="tabDetailViewDF">notify</td><td class="tabDetailViewDF">fromaddress</td><td class="tabDetailViewDF">do_not_reply@example.com</td></tr><tr><td class="tabDetailViewDL">2</td><td class="tabDetailViewDF">notify</td><td class="tabDetailViewDF">fromname</td><td class="tabDetailViewDF">SuiteCRM</td></tr><tr><td class="tabDetailViewDL">3</td><td class="tabDetailViewDF">notify</td><td class="tabDetailViewDF">send_by_default</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">4</td><td class="tabDetailViewDF">notify</td><td class="tabDetailViewDF">on</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">5</td><td class="tabDetailViewDF">notify</td><td class="tabDetailViewDF">send_from_assigning_user</td><td class="tabDetailViewDF">0</td></tr><tr><td class="tabDetailViewDL">6</td><td class="tabDetailViewDF">info</td><td class="tabDetailViewDF">sugar_version</td><td class="tabDetailViewDF">6.5.25</td></tr><tr><td class="tabDetailViewDL">7</td><td class="tabDetailViewDF">MySettings</td><td class="tabDetailViewDF">tab</td><td class="tabDetailViewDF">YTo0NDp7czo0OiJIb21lIjtzOjQ6IkhvbWUiO3M6ODoiQWNjb3VudHMiO3M6ODoiQWNjb3VudHMiO3M6ODoiQ29udGFjdHMiO3M6ODoiQ29udGFjdHMiO3M6MTM6Ik9wcG9ydHVuaXRpZXMiO3M6MTM6Ik9wcG9ydHVuaXRpZXMiO3M6NToiTGVhZHMiO3M6NToiTGVhZHMiO3M6MTA6IkFPU19RdW90ZXMiO3M6MTA6IkFPU19RdW90ZXMiO3M6ODoiQ2FsZW5kYXIiO3M6ODoiQ2FsZW5kYXIiO3M6OToiRG9jdW1lbnRzIjtzOjk6IkRvY3VtZW50cyI7czo2OiJFbWFpbHMiO3M6NjoiRW1haWxzIjtzOjU6IlNwb3RzIjtzOjU6IlNwb3RzIjtzOjk6IkNhbXBhaWducyI7czo5OiJDYW1wYWlnbnMiO3M6NToiQ2FsbHMiO3M6NToiQ2FsbHMiO3M6ODoiTWVldGluZ3MiO3M6ODoiTWVldGluZ3MiO3M6NToiVGFza3MiO3M6NToiVGFza3MiO3M6NToiTm90ZXMiO3M6NToiTm90ZXMiO3M6MTI6IkFPU19JbnZvaWNlcyI7czoxMjoiQU9TX0ludm9pY2VzIjtzOjEzOiJBT1NfQ29udHJhY3RzIjtzOjEzOiJBT1NfQ29udHJhY3RzIjtzOjU6IkNhc2VzIjtzOjU6IkNhc2VzIjtzOjk6IlByb3NwZWN0cyI7czo5OiJQcm9zcGVjdHMiO3M6MTM6IlByb3NwZWN0TGlzdHMiO3M6MTM6IlByb3NwZWN0TGlzdHMiO3M6NzoiUHJvamVjdCI7czo3OiJQcm9qZWN0IjtzOjE5OiJBTV9Qcm9qZWN0VGVtcGxhdGVzIjtzOjE5OiJBTV9Qcm9qZWN0VGVtcGxhdGVzIjtzOjk6IkZQX2V2ZW50cyI7czo5OiJGUF9ldmVudHMiO3M6MTg6IkZQX0V2ZW50X0xvY2F0aW9ucyI7czoxODoiRlBfRXZlbnRfTG9jYXRpb25zIjtzOjEyOiJBT1NfUHJvZHVjdHMiO3M6MTI6IkFPU19Qcm9kdWN0cyI7czoyMjoiQU9TX1Byb2R1Y3RfQ2F0ZWdvcmllcyI7czoyMjoiQU9TX1Byb2R1Y3RfQ2F0ZWdvcmllcyI7czoxNzoiQU9TX1BERl9UZW1wbGF0ZXMiO3M6MTc6IkFPU19QREZfVGVtcGxhdGVzIjtzOjk6Impqd2dfTWFwcyI7czo5OiJqandnX01hcHMiO3M6MTI6Impqd2dfTWFya2VycyI7czoxMjoiamp3Z19NYXJrZXJzIjtzOjEwOiJqandnX0FyZWFzIjtzOjEwOiJqandnX0FyZWFzIjtzOjE4OiJqandnX0FkZHJlc3NfQ2FjaGUiO3M6MTg6Impqd2dfQWRkcmVzc19DYWNoZSI7czoxMToiQU9SX1JlcG9ydHMiO3M6MTE6IkFPUl9SZXBvcnRzIjtzOjEyOiJBT1dfV29ya0Zsb3ciO3M6MTI6IkFPV19Xb3JrRmxvdyI7czoxNzoiQU9LX0tub3dsZWRnZUJhc2UiO3M6MTc6IkFPS19Lbm93bGVkZ2VCYXNlIjtzOjI5OiJBT0tfS25vd2xlZGdlX0Jhc2VfQ2F0ZWdvcmllcyI7czoyOToiQU9LX0tub3dsZWRnZV9CYXNlX0NhdGVnb3JpZXMiO3M6MTM6InN1cF9TdXBwbGlyZXMiO3M6MTM6InN1cF9TdXBwbGlyZXMiO3M6MTI6IkN1X0N1c3RvbWVycyI7czoxMjoiQ3VfQ3VzdG9tZXJzIjtzOjEyOiJJTlZfSW52b2ljZXMiO3M6MTI6IklOVl9JbnZvaWNlcyI7czoxMDoiY29zdF9Db3N0cyI7czoxMDoiY29zdF9Db3N0cyI7czoxNDoicGFydG5fUGFydG5lcnMiO3M6MTQ6InBhcnRuX1BhcnRuZXJzIjtzOjc6IkJ0X0JhbmsiO3M6NzoiQnRfQmFuayI7czoxMDoiQnRfUGVyc29ucyI7czoxMDoiQnRfUGVyc29ucyI7czoxNjoiVUFfTWFudWZhY3R1cmVycyI7czoxNjoiVUFfTWFudWZhY3R1cmVycyI7czoxMjoiVUFfQ29udHJhY3RzIjtzOjEyOiJVQV9Db250cmFjdHMiO30=</td></tr><tr><td class="tabDetailViewDL">8</td><td class="tabDetailViewDF">portal</td><td class="tabDetailViewDF">on</td><td class="tabDetailViewDF">0</td></tr><tr><td class="tabDetailViewDL">9</td><td class="tabDetailViewDF">tracker</td><td class="tabDetailViewDF">Tracker</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">10</td><td class="tabDetailViewDF">system</td><td class="tabDetailViewDF">skypeout_on</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">11</td><td class="tabDetailViewDF">sugarfeed</td><td class="tabDetailViewDF">enabled</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">12</td><td class="tabDetailViewDF">sugarfeed</td><td class="tabDetailViewDF">module_UserFeed</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">13</td><td class="tabDetailViewDF">sugarfeed</td><td class="tabDetailViewDF">module_Cases</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">14</td><td class="tabDetailViewDF">sugarfeed</td><td class="tabDetailViewDF">module_Contacts</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">15</td><td class="tabDetailViewDF">sugarfeed</td><td class="tabDetailViewDF">module_Leads</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">16</td><td class="tabDetailViewDF">sugarfeed</td><td class="tabDetailViewDF">module_Opportunities</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">17</td><td class="tabDetailViewDF">Update</td><td class="tabDetailViewDF">CheckUpdates</td><td class="tabDetailViewDF">manual</td></tr><tr><td class="tabDetailViewDL">18</td><td class="tabDetailViewDF">system</td><td class="tabDetailViewDF">name</td><td class="tabDetailViewDF">360° Management System</td></tr><tr><td class="tabDetailViewDL">19</td><td class="tabDetailViewDF">system</td><td class="tabDetailViewDF">adminwizard</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">20</td><td class="tabDetailViewDF">notify</td><td class="tabDetailViewDF">allow_default_outbound</td><td class="tabDetailViewDF">2</td></tr><tr><td class="tabDetailViewDL">21</td><td class="tabDetailViewDF">proxy</td><td class="tabDetailViewDF">on</td><td class="tabDetailViewDF">0</td></tr><tr><td class="tabDetailViewDL">22</td><td class="tabDetailViewDF">proxy</td><td class="tabDetailViewDF">host</td><td class="tabDetailViewDF">&nbsp;</td></tr><tr><td class="tabDetailViewDL">23</td><td class="tabDetailViewDF">proxy</td><td class="tabDetailViewDF">port</td><td class="tabDetailViewDF">&nbsp;</td></tr><tr><td class="tabDetailViewDL">24</td><td class="tabDetailViewDF">proxy</td><td class="tabDetailViewDF">auth</td><td class="tabDetailViewDF">0</td></tr><tr><td class="tabDetailViewDL">25</td><td class="tabDetailViewDF">proxy</td><td class="tabDetailViewDF">username</td><td class="tabDetailViewDF">admin</td></tr><tr><td class="tabDetailViewDL">26</td><td class="tabDetailViewDF">proxy</td><td class="tabDetailViewDF">password</td><td class="tabDetailViewDF">********</td></tr></table>
