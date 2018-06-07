@@ -22,17 +22,17 @@ array (
         ),
       ),
       'javascript' => '{$PROBABILITY_SCRIPT}',
-      'useTabs' => true,
+      'useTabs' => false,
       'tabDefs' => 
       array (
         'LBL_SALE_INFORMATION' => 
         array (
-          'newTab' => true,
+          'newTab' => false,
           'panelDefault' => 'expanded',
         ),
         'LBL_EDITVIEW_PANEL1' => 
         array (
-          'newTab' => true,
+          'newTab' => false,
           'panelDefault' => 'expanded',
         ),
       ),
@@ -44,7 +44,7 @@ array (
         0 => 
         array (
           0 => 'name',
-          1 => '',
+          1 => 'currency_id',
         ),
         1 => 
         array (
@@ -54,7 +54,7 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_OPPORTUNITY',
           ),
-          1 => 'currency_id',
+          1 => 'amount',
         ),
         2 => 
         array (
@@ -64,7 +64,12 @@ array (
             'studio' => 'visible',
             'label' => 'LBL_CLIENT',
           ),
-          1 => 'amount',
+          1 => 
+          array (
+            'name' => 'country_c',
+            'studio' => 'visible',
+            'label' => 'LBL_COUNTRY',
+          ),
         ),
         3 => 
         array (
@@ -79,16 +84,6 @@ array (
             'name' => 'partneramount_c',
             'label' => 'LBL_PARTNERAMOUNT',
           ),
-        ),
-        4 => 
-        array (
-          0 => 
-          array (
-            'name' => 'country_c',
-            'studio' => 'visible',
-            'label' => 'LBL_COUNTRY',
-          ),
-          1 => '',
         ),
       ),
       'lbl_editview_panel1' => 

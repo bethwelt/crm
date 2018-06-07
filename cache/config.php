@@ -1,5 +1,5 @@
 <?php
-// created: 2018-06-05 16:56:09
+// created: 2018-06-06 15:46:29
 $sugar_config = array (
   'addAjaxBannedModules' => 
   array (
@@ -241,7 +241,7 @@ $sugar_config = array (
   'default_currency_iso4217' => 'CFA franc',
   'default_currency_name' => 'CFA franc',
   'default_currency_significant_digits' => 2,
-  'default_currency_symbol' => '¢',
+  'default_currency_symbol' => 'CFA',
   'default_date_format' => 'm/d/Y',
   'default_decimal_seperator' => '.',
   'default_email_charset' => 'UTF-8',
@@ -300,7 +300,7 @@ $sugar_config = array (
     'timeout' => 86400,
   ),
   'js_custom_version' => 1,
-  'js_lang_version' => 17,
+  'js_lang_version' => 18,
   'languages' => 
   array (
     'en_us' => 'English (US)',

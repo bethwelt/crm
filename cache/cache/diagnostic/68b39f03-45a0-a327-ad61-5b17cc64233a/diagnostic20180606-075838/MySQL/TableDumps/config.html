@@ -1,0 +1,62 @@
+<style>
+.tabDetailView
+{
+    border-bottom:2px solid;
+    border-top:2px solid;
+    margin-bottom:10px;
+    margin-top:2px;
+    border-bottom-color:#ABC3D7;
+    border-top-color:#4E8CCF;
+}
+
+.tabDetailView td table td
+{
+    border: 0;
+    background: white;
+}
+
+.tabDetailView tr.pagination td
+{
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom:1px solid #CBDAE6;
+}
+
+.tabDetailView tr.pagination td table td
+{
+    border: none;
+}
+
+.tabDetailViewDL
+{
+    background-color:#F6F6F6;
+    color:#000000;
+    border-bottom:1px solid #CBDAE6;
+    font-size:12px;
+    padding:5px 6px;
+    text-align:left;
+    vertical-align:top;
+}
+
+.tabDetailViewDF
+{
+    background-color:#FFFFFF;
+    color:#444444;
+    border-bottom:1px solid #CBDAE6;
+    font-size:12px;
+    padding:5px 10px 5px 8px;
+    vertical-align:top;
+}
+
+.listViewThS1
+{
+    background:#EBEBED none repeat scroll 0 0;
+    border-color:#CCCCCC -moz-use-text-color;
+    border-style:solid none;
+    border-width:1px medium;
+    font-size:11px;
+    font-weight:bold;
+    padding:4px 5px;
+    text-align:left;
+}
+    </style><table border="0" cellpadding="0" class="tabDetailView"><tr colspan="3">MySQL config Definitions:</tr><tr><th class="tabDetailViewDL"><b>name</b></th><th class="tabDetailViewDL"><b>type</b></th><th class="tabDetailViewDL"><b>len</b></th></tr><tr><td class="tabDetailViewDF">category</td><td class="tabDetailViewDF">varchar</td><td class="tabDetailViewDF">32</td></tr><tr><td class="tabDetailViewDF">name</td><td class="tabDetailViewDF">varchar</td><td class="tabDetailViewDF">32</td></tr><tr><td class="tabDetailViewDF">value</td><td class="tabDetailViewDF">text</td></tr></table><table border="0" cellpadding="0" class="tabDetailView"><tr colspan="3">MySQL config Keys:</tr><tr><th class="tabDetailViewDL"><b>name</b></th><th class="tabDetailViewDL"><b>type</b></th><th class="tabDetailViewDL"><b>fields</b></th></tr><tr><td class="tabDetailViewDF">idx_config_cat</td><td class="tabDetailViewDF">index</td><td class="tabDetailViewDF">category</td></tr></table><BR><BR><table border="0" cellpadding="0" class="tabDetailView"><tr><th class="tabDetailViewDL">#</th><th class="tabDetailViewDL">category</th><th class="tabDetailViewDL">name</th><th class="tabDetailViewDL">value</th></tr><tr><td class="tabDetailViewDL">1</td><td class="tabDetailViewDF">notify</td><td class="tabDetailViewDF">fromaddress</td><td class="tabDetailViewDF">do_not_reply@example.com</td></tr><tr><td class="tabDetailViewDL">2</td><td class="tabDetailViewDF">notify</td><td class="tabDetailViewDF">fromname</td><td class="tabDetailViewDF">360 CRM</td></tr><tr><td class="tabDetailViewDL">3</td><td class="tabDetailViewDF">notify</td><td class="tabDetailViewDF">send_by_default</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">4</td><td class="tabDetailViewDF">notify</td><td class="tabDetailViewDF">on</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">5</td><td class="tabDetailViewDF">notify</td><td class="tabDetailViewDF">send_from_assigning_user</td><td class="tabDetailViewDF">0</td></tr><tr><td class="tabDetailViewDL">6</td><td class="tabDetailViewDF">info</td><td class="tabDetailViewDF">sugar_version</td><td class="tabDetailViewDF">6.5.25</td></tr><tr><td class="tabDetailViewDL">7</td><td class="tabDetailViewDF">MySettings</td><td class="tabDetailViewDF">tab</td><td class="tabDetailViewDF">YToxOTp7czo0OiJIb21lIjtzOjQ6IkhvbWUiO3M6ODoiQWNjb3VudHMiO3M6ODoiQWNjb3VudHMiO3M6ODoiQ29udGFjdHMiO3M6ODoiQ29udGFjdHMiO3M6MTM6Ik9wcG9ydHVuaXRpZXMiO3M6MTM6Ik9wcG9ydHVuaXRpZXMiO3M6MTA6IkFPU19RdW90ZXMiO3M6MTA6IkFPU19RdW90ZXMiO3M6NjoiRW1haWxzIjtzOjY6IkVtYWlscyI7czo4OiJNZWV0aW5ncyI7czo4OiJNZWV0aW5ncyI7czoxMjoiQU9TX0ludm9pY2VzIjtzOjEyOiJBT1NfSW52b2ljZXMiO3M6MTg6IkZQX0V2ZW50X0xvY2F0aW9ucyI7czoxODoiRlBfRXZlbnRfTG9jYXRpb25zIjtzOjEyOiJBT1NfUHJvZHVjdHMiO3M6MTI6IkFPU19Qcm9kdWN0cyI7czoyMjoiQU9TX1Byb2R1Y3RfQ2F0ZWdvcmllcyI7czoyMjoiQU9TX1Byb2R1Y3RfQ2F0ZWdvcmllcyI7czoxNzoiQU9TX1BERl9UZW1wbGF0ZXMiO3M6MTc6IkFPU19QREZfVGVtcGxhdGVzIjtzOjEwOiJqandnX0FyZWFzIjtzOjEwOiJqandnX0FyZWFzIjtzOjExOiJBT1JfUmVwb3J0cyI7czoxMToiQU9SX1JlcG9ydHMiO3M6MTQ6ImNhdF9DYXRlZ29yaWVzIjtzOjE0OiJjYXRfQ2F0ZWdvcmllcyI7czoxMDoiQ1VfQ3VzdG9tcyI7czoxMDoiQ1VfQ3VzdG9tcyI7czo4OiJDT19Db3N0cyI7czo4OiJDT19Db3N0cyI7czo3OiJCdF9CYW5rIjtzOjc6IkJ0X0JhbmsiO3M6MTU6IklOVl9JbnZlbnRvcmllcyI7czoxNToiSU5WX0ludmVudG9yaWVzIjt9</td></tr><tr><td class="tabDetailViewDL">8</td><td class="tabDetailViewDF">portal</td><td class="tabDetailViewDF">on</td><td class="tabDetailViewDF">0</td></tr><tr><td class="tabDetailViewDL">9</td><td class="tabDetailViewDF">tracker</td><td class="tabDetailViewDF">Tracker</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">10</td><td class="tabDetailViewDF">system</td><td class="tabDetailViewDF">skypeout_on</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">11</td><td class="tabDetailViewDF">sugarfeed</td><td class="tabDetailViewDF">enabled</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">12</td><td class="tabDetailViewDF">sugarfeed</td><td class="tabDetailViewDF">module_UserFeed</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">13</td><td class="tabDetailViewDF">sugarfeed</td><td class="tabDetailViewDF">module_Cases</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">14</td><td class="tabDetailViewDF">sugarfeed</td><td class="tabDetailViewDF">module_Contacts</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">15</td><td class="tabDetailViewDF">sugarfeed</td><td class="tabDetailViewDF">module_Leads</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">16</td><td class="tabDetailViewDF">sugarfeed</td><td class="tabDetailViewDF">module_Opportunities</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">17</td><td class="tabDetailViewDF">Update</td><td class="tabDetailViewDF">CheckUpdates</td><td class="tabDetailViewDF">manual</td></tr><tr><td class="tabDetailViewDL">18</td><td class="tabDetailViewDF">system</td><td class="tabDetailViewDF">name</td><td class="tabDetailViewDF">360° CRM</td></tr><tr><td class="tabDetailViewDL">19</td><td class="tabDetailViewDF">system</td><td class="tabDetailViewDF">adminwizard</td><td class="tabDetailViewDF">1</td></tr><tr><td class="tabDetailViewDL">20</td><td class="tabDetailViewDF">notify</td><td class="tabDetailViewDF">allow_default_outbound</td><td class="tabDetailViewDF">0</td></tr><tr><td class="tabDetailViewDL">21</td><td class="tabDetailViewDF">proxy</td><td class="tabDetailViewDF">on</td><td class="tabDetailViewDF">0</td></tr><tr><td class="tabDetailViewDL">22</td><td class="tabDetailViewDF">proxy</td><td class="tabDetailViewDF">host</td><td class="tabDetailViewDF">&nbsp;</td></tr><tr><td class="tabDetailViewDL">23</td><td class="tabDetailViewDF">proxy</td><td class="tabDetailViewDF">port</td><td class="tabDetailViewDF">&nbsp;</td></tr><tr><td class="tabDetailViewDL">24</td><td class="tabDetailViewDF">proxy</td><td class="tabDetailViewDF">auth</td><td class="tabDetailViewDF">0</td></tr><tr><td class="tabDetailViewDL">25</td><td class="tabDetailViewDF">proxy</td><td class="tabDetailViewDF">username</td><td class="tabDetailViewDF">admin</td></tr><tr><td class="tabDetailViewDL">26</td><td class="tabDetailViewDF">proxy</td><td class="tabDetailViewDF">password</td><td class="tabDetailViewDF">********</td></tr><tr><td class="tabDetailViewDL">27</td><td class="tabDetailViewDF">MySettings</td><td class="tabDetailViewDF">disable_useredit</td><td class="tabDetailViewDF">no</td></tr><tr><td class="tabDetailViewDL">28</td><td class="tabDetailViewDF">MySettings</td><td class="tabDetailViewDF">hide_subpanels</td><td class="tabDetailViewDF">YToxNjp7czoxMToiY2FtcGFpZ25sb2ciO3M6MTE6ImNhbXBhaWdubG9nIjtzOjE0OiJzZWN1cml0eWdyb3VwcyI7czoxNDoic2VjdXJpdHlncm91cHMiO3M6NToibGVhZHMiO3M6NToibGVhZHMiO3M6OToiZG9jdW1lbnRzIjtzOjk6ImRvY3VtZW50cyI7czo0OiJidWdzIjtzOjQ6ImJ1Z3MiO3M6NToiY2FzZXMiO3M6NToiY2FzZXMiO3M6Mjk6ImFva19rbm93bGVkZ2VfYmFzZV9jYXRlZ29yaWVzIjtzOjI5OiJhb2tfa25vd2xlZGdlX2Jhc2VfY2F0ZWdvcmllcyI7czoxMDoiamp3Z19hcmVhcyI7czoxMDoiamp3Z19hcmVhcyI7czoxMjoiamp3Z19tYXJrZXJzIjtzOjEyOiJqandnX21hcmtlcnMiO3M6OToiamp3Z19tYXBzIjtzOjk6Impqd2dfbWFwcyI7czo1OiJub3RlcyI7czo1OiJub3RlcyI7czoxNzoiYW9rX2tub3dsZWRnZWJhc2UiO3M6MTc6ImFva19rbm93bGVkZ2ViYXNlIjtzOjg6Im1lZXRpbmdzIjtzOjg6Im1lZXRpbmdzIjtzOjE5OiJhbV9wcm9qZWN0dGVtcGxhdGVzIjtzOjE5OiJhbV9wcm9qZWN0dGVtcGxhdGVzIjtzOjEzOiJwcm9zcGVjdGxpc3RzIjtzOjEzOiJwcm9zcGVjdGxpc3RzIjtzOjk6InByb3NwZWN0cyI7czo5OiJwcm9zcGVjdHMiO30=</td></tr></table>

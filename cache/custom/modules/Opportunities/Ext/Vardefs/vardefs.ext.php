@@ -121,4 +121,31 @@ $dictionary['Opportunity']['fields']['partnercost_c']['inline_edit']='1';
 $dictionary['Opportunity']['fields']['partnercost_c']['labelValue']='Partner Cost';
 
  
+
+ // created: 2018-06-06 15:34:10
+$dictionary['Opportunity']['fields']['description']['inline_edit']=true;
+$dictionary['Opportunity']['fields']['description']['comments']='Full text of the note';
+$dictionary['Opportunity']['fields']['description']['merge_filter']='disabled';
+$dictionary['Opportunity']['fields']['description']['cols']='30';
+$dictionary['Opportunity']['fields']['description']['rows']='5';
+
+ 
+
+ // created: 2018-06-06 16:11:11
+$dictionary['Opportunity']['fields']['datenex_c']['inline_edit']='1';
+$dictionary['Opportunity']['fields']['datenex_c']['labelValue']='Next Date';
+
+ 
+
+// created: 2018-06-06 16:26:13
+$dictionary["Opportunity"]["fields"]["co_costs_opportunities_1"] = array (
+  'name' => 'co_costs_opportunities_1',
+  'type' => 'link',
+  'relationship' => 'co_costs_opportunities_1',
+  'source' => 'non-db',
+  'module' => 'CO_Costs',
+  'bean_name' => 'CO_Costs',
+  'vname' => 'LBL_CO_COSTS_OPPORTUNITIES_1_FROM_CO_COSTS_TITLE',
+);
+
 ?>

@@ -1,5 +1,5 @@
 <?php
-// created: 2018-06-05 16:30:53
+// created: 2018-06-06 16:11:11
 $mod_strings = array (
   'LBL_NEGAMOUNT' => 'Negotiation Amount',
   'LBL_GMAMOUNT' => 'Gross Margin Amount',
@@ -28,4 +28,6 @@ $mod_strings = array (
   'LBL_APPROACHFEES_CO_COSTS_ID' => 'Approach Fees (related  ID)',
   'LBL_APPROACHFEES ' => 'Approach Fees',
   'LBL_PARTNERCOST_CO_COSTS_ID' => 'Partner Cost (related  ID)',
+  'LBL_DESCRIPTION' => 'Description:',
+  'LBL_DATENEX' => 'Next Date',
 );

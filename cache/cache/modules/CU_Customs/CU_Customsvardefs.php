@@ -126,8 +126,11 @@
       'vname' => 'LBL_DESCRIPTION',
       'type' => 'text',
       'comment' => 'Full text of the note',
-      'rows' => 6,
-      'cols' => 80,
+      'rows' => '4',
+      'cols' => '30',
+      'inline_edit' => true,
+      'comments' => 'Full text of the note',
+      'merge_filter' => 'disabled',
     ),
     'deleted' => 
     array (

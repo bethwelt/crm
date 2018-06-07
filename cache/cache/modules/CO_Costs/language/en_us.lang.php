@@ -1,5 +1,5 @@
 <?php
-// created: 2018-06-05 17:46:43
+// created: 2018-06-06 18:15:36
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -11,7 +11,7 @@ $mod_strings = array (
   'LBL_CREATED_ID' => 'Created By Id',
   'LBL_DESCRIPTION' => 'Description',
   'LBL_DELETED' => 'Deleted',
-  'LBL_NAME' => 'Cost Name',
+  'LBL_NAME' => 'Cost Name/Type',
   'LBL_CREATED_USER' => 'Created by User',
   'LBL_MODIFIED_USER' => 'Modified by User',
   'LBL_LIST_NAME' => 'Name',
@@ -120,9 +120,10 @@ $mod_strings = array (
   'LBL_FINANCIALCOST' => 'Financial Cost',
   'LBL_TRANSITCOST' => 'Transit Cost',
   'LBL_CUSTOMCOST_CU_CUSTOMS_ID' => 'Custom Cost (related  ID)',
-  'LBL_CUSTOMCOST' => 'Custom Cost',
+  'LBL_CUSTOMCOST' => 'Custom',
   'LBL_FREIGHTAMOUNT' => 'Freight Amount',
   'LBL_PARTNERAMOUNT' => 'Partner Amount',
   'LBL_COUNTRY' => 'Country',
-  'LBL_EDITVIEW_PANEL1' => 'Other Details',
+  'LBL_EDITVIEW_PANEL1' => 'Details',
+  'LBL_CO_COSTS_OPPORTUNITIES_1_FROM_OPPORTUNITIES_TITLE' => 'Opportunities',
 );

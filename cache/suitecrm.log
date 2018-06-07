@@ -225,3 +225,38 @@ Tue Jun  5 16:57:35 2018 [9120][1][FATAL]  Query Failed:  SELECT  inv_inventorie
  AND jt2.deleted=0 LEFT JOIN aos_product_categories jt3 ON inv_inventories_cstm.aos_product_categories_id_c = jt3.id AND jt3.deleted=0  LEFT JOIN fp_event_locations jt4 ON inv_inventories_cstm.fp_event_locations_id_c = jt4.id AND jt4.deleted=0  LEFT JOIN aos_products jt5 ON inv_inventories_cstm.aos_products_id1_c = jt5.id AND jt5.deleted=0  where inv_inventories.deleted=0 ORDER BY inv_inventories.date_entered DESC LIMIT 0,21: MySQL error 1146: Table 'bitwebsy_suite.inv_inventories_cstm' doesn't exist
 Tue Jun  5 17:33:48 2018 [5720][1][FATAL]  Query Failed:  SELECT  co_costs.id , co_costs_cstm.opportunity_id_c , co_costs_cstm.account_id_c , co_costs_cstm.account_id1_c , jt0.name opportunity_c , co_costs.name , co_costs.amount_usdollar , co_costs.amount , jt1.name client_c , jt2.name partnername_c , co_costs.assigned_user_id  FROM co_costs  LEFT JOIN co_costs_cstm ON co_costs.id = co_costs_cstm.id_c  LEFT JOIN opportunities jt0 ON co_costs_cstm.opportunity_id_c = jt0.id AND jt0.deleted=0  LEFT JOIN accounts jt1 ON co_costs_cstm.account_id_c = jt1.id AND jt1.deleted=0  LEFT JOIN accounts jt2 ON co_costs_cstm.account_id1_c = jt2.id AND jt2.deleted=0  where co_costs.deleted=0 ORDER BY co_costs.date_entered DESC LIMIT 0,21: MySQL error 1054: Unknown column 'co_costs.name' in 'field list'
 Tue Jun  5 17:36:18 2018 [8380][1][FATAL]  Query Failed:  SELECT  co_costs.id , co_costs_cstm.opportunity_id_c , co_costs_cstm.account_id_c , co_costs_cstm.account_id1_c , jt0.name opportunity_c , co_costs.name , co_costs.amount_usdollar , co_costs.amount , jt1.name client_c , jt2.name partnername_c , co_costs.assigned_user_id  FROM co_costs  LEFT JOIN co_costs_cstm ON co_costs.id = co_costs_cstm.id_c  LEFT JOIN opportunities jt0 ON co_costs_cstm.opportunity_id_c = jt0.id AND jt0.deleted=0  LEFT JOIN accounts jt1 ON co_costs_cstm.account_id_c = jt1.id AND jt1.deleted=0  LEFT JOIN accounts jt2 ON co_costs_cstm.account_id1_c = jt2.id AND jt2.deleted=0  where co_costs.deleted=0 ORDER BY co_costs.date_entered DESC LIMIT 0,21: MySQL error 1054: Unknown column 'co_costs.name' in 'field list'
+Wed Jun  6 07:59:20 2018 [15135][1][FATAL]  Query Failed: DESCRIBE versions: MySQL error 1146: Table 'bitwebsy_suite.versions' doesn't exist
+Wed Jun  6 07:59:20 2018 [15135][1][FATAL]  Query Failed: SHOW INDEX FROM versions: MySQL error 1146: Table 'bitwebsy_suite.versions' doesn't exist
+Wed Jun  6 07:59:20 2018 [15135][1][FATAL]  Query Failed: select * from versions: MySQL error 1146: Table 'bitwebsy_suite.versions' doesn't exist
+Wed Jun  6 08:03:38 2018 [15784][-none-][FATAL] Retrieving record by id users:1 found  Query Failed: SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1: MySQL error 2006: MySQL server has gone away
+Wed Jun  6 08:03:38 2018 [16804][-none-][FATAL] Retrieving record by id users:1 found  Query Failed: SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1: MySQL error 2006: MySQL server has gone away
+Wed Jun  6 09:17:48 2018 [15621][-none-][FATAL] FAILED LOGIN:attempts[1] - admin
+Wed Jun  6 15:46:30 2018 [15008][1][FATAL] quotes for projects_quotes failed to load
+
+Wed Jun  6 15:46:30 2018 [15008][1][FATAL] project_resource for projects_users_resources failed to load
+
+Wed Jun  6 15:46:30 2018 [15008][1][FATAL] am_projecttemplates_resources for am_projecttemplates_users_resources failed to load
+
+Wed Jun  6 15:46:30 2018 [15008][1][FATAL] project_resource for projects_contacts_resources failed to load
+
+Wed Jun  6 15:46:30 2018 [15008][1][FATAL] am_projecttemplates_resources for am_projecttemplates_contacts_resources failed to load
+
+Wed Jun  6 15:46:30 2018 [15008][1][FATAL] project_resource for projects_users_resources failed to load
+
+Wed Jun  6 15:46:30 2018 [15008][1][FATAL] am_projecttemplates_resources for am_projecttemplates_users_resources failed to load
+
+Wed Jun  6 15:46:30 2018 [15008][1][FATAL] assigned_user_link for tracker_user_id failed to load
+
+Wed Jun  6 15:46:30 2018 [15008][1][FATAL] Class Connectors does not exist, unable to rename.
+Wed Jun  6 15:46:30 2018 [15008][1][FATAL] Class Version does not exist, unable to rename.
+Wed Jun  6 15:46:30 2018 [15008][1][FATAL] Class CustomFields does not exist, unable to rename.
+Wed Jun  6 15:46:30 2018 [15008][1][FATAL] Class Audit does not exist, unable to rename.
+Wed Jun  6 15:46:31 2018 [15008][1][FATAL] project_resource for projects_users_resources failed to load
+
+Wed Jun  6 15:46:31 2018 [15008][1][FATAL] am_projecttemplates_resources for am_projecttemplates_users_resources failed to load
+
+Wed Jun  6 15:46:31 2018 [15008][1][FATAL] aos_products_purchases for aos_products_purchases failed to load
+
+Wed Jun  6 17:00:07 2018 [13146][1][FATAL]  Query Failed:  SELECT  co_costs.id , co_costs_cstm.opportunity_id_c , co_costs_cstm.account_id_c , co_costs_cstm.account_id1_c , co_costs.name , jt0.name opportunity_c , co_costs.amount_usdollar , co_costs.amount , jt1.name client_c , jt2.name partnername_c , co_costs.assigned_user_id  FROM co_costs  LEFT JOIN co_costs_cstm ON co_costs.id = co_costs_cstm.id_c  LEFT JOIN opportunities jt0 ON co_costs_cstm.opportunity_id_c = jt0.id AND jt0.deleted=0  LEFT JOIN accounts jt1 ON co_costs_cstm.account_id_c = jt1.id AND jt1.deleted=0  LEFT JOIN accounts jt2 ON co_costs_cstm.account_id1_c = jt2.id AND jt2.deleted=0  where co_costs.deleted=0 ORDER BY co_costs.date_entered DESC LIMIT 0,21: MySQL error 1054: Unknown column 'co_costs.name' in 'field list'
+Wed Jun  6 17:01:16 2018 [14157][1][FATAL]  Query Failed:  SELECT  co_costs.id , co_costs_cstm.opportunity_id_c , co_costs_cstm.account_id_c , co_costs_cstm.account_id1_c , co_costs.name , jt0.name opportunity_c , co_costs.amount_usdollar , co_costs.amount , jt1.name client_c , jt2.name partnername_c , co_costs.assigned_user_id  FROM co_costs  LEFT JOIN co_costs_cstm ON co_costs.id = co_costs_cstm.id_c  LEFT JOIN opportunities jt0 ON co_costs_cstm.opportunity_id_c = jt0.id AND jt0.deleted=0  LEFT JOIN accounts jt1 ON co_costs_cstm.account_id_c = jt1.id AND jt1.deleted=0  LEFT JOIN accounts jt2 ON co_costs_cstm.account_id1_c = jt2.id AND jt2.deleted=0  where co_costs.deleted=0 ORDER BY co_costs.date_entered DESC LIMIT 0,21: MySQL error 1054: Unknown column 'co_costs.name' in 'field list'
+Wed Jun  6 17:08:46 2018 [19993][1][FATAL]  Query Failed:  SELECT  co_costs.id , co_costs_cstm.opportunity_id_c , co_costs_cstm.account_id_c , co_costs_cstm.account_id1_c , co_costs.name , jt0.name opportunity_c , co_costs.amount_usdollar , co_costs.amount , jt1.name client_c , jt2.name partnername_c , co_costs.assigned_user_id  FROM co_costs  LEFT JOIN co_costs_cstm ON co_costs.id = co_costs_cstm.id_c  LEFT JOIN opportunities jt0 ON co_costs_cstm.opportunity_id_c = jt0.id AND jt0.deleted=0  LEFT JOIN accounts jt1 ON co_costs_cstm.account_id_c = jt1.id AND jt1.deleted=0  LEFT JOIN accounts jt2 ON co_costs_cstm.account_id1_c = jt2.id AND jt2.deleted=0  where co_costs.deleted=0 ORDER BY co_costs.date_entered DESC LIMIT 0,21: MySQL error 1054: Unknown column 'co_costs.name' in 'field list'

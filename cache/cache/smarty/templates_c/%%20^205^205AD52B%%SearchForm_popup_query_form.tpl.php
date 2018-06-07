@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.29, created on 2018-06-05 16:14:01
+<?php /* Smarty version 2.6.29, created on 2018-06-06 18:21:18
          compiled from cache/themes/SuiteR/modules/Bt_Bank/SearchForm_popup_query_form.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'counter', 'cache/themes/SuiteR/modules/Bt_Bank/SearchForm_popup_query_form.tpl', 26, false),array('function', 'math', 'cache/themes/SuiteR/modules/Bt_Bank/SearchForm_popup_query_form.tpl', 27, false),array('function', 'sugar_getimagepath', 'cache/themes/SuiteR/modules/Bt_Bank/SearchForm_popup_query_form.tpl', 36, false),array('function', 'sugar_translate', 'cache/themes/SuiteR/modules/Bt_Bank/SearchForm_popup_query_form.tpl', 46, false),array('function', 'html_options', 'cache/themes/SuiteR/modules/Bt_Bank/SearchForm_popup_query_form.tpl', 87, false),array('function', 'sugar_getimage', 'cache/themes/SuiteR/modules/Bt_Bank/SearchForm_popup_query_form.tpl', 100, false),)), $this); ?>

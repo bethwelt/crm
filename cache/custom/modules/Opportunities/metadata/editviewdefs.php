@@ -20,17 +20,12 @@ array (
         ),
       ),
       'javascript' => '{$PROBABILITY_SCRIPT}',
-      'useTabs' => true,
+      'useTabs' => false,
       'tabDefs' => 
       array (
         'LBL_EDITVIEW_PANEL1' => 
         array (
-          'newTab' => true,
-          'panelDefault' => 'expanded',
-        ),
-        'DEFAULT' => 
-        array (
-          'newTab' => true,
+          'newTab' => false,
           'panelDefault' => 'expanded',
         ),
       ),
@@ -88,10 +83,7 @@ array (
             'label' => 'LBL_PARTNERCOST',
           ),
         ),
-      ),
-      'default' => 
-      array (
-        0 => 
+        4 => 
         array (
           0 => 
           array (
@@ -106,22 +98,31 @@ array (
             'label' => 'LBL_APPROACHFEES ',
           ),
         ),
-        1 => 
+        5 => 
         array (
           0 => 'next_step',
-          1 => 'lead_source',
-        ),
-        2 => 
-        array (
-          0 => 'sales_stage',
           1 => 
+          array (
+            'name' => 'datenex_c',
+            'label' => 'LBL_DATENEX',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
           array (
             'name' => 'salesperson_c',
             'studio' => 'visible',
             'label' => 'LBL_SALESPERSON',
           ),
+          1 => 'sales_stage',
         ),
-        3 => 
+        7 => 
+        array (
+          0 => 'lead_source',
+          1 => 'probability',
+        ),
+        8 => 
         array (
           0 => 
           array (
@@ -134,10 +135,9 @@ array (
             'label' => 'LBL_GMAMOUNT',
           ),
         ),
-        4 => 
+        9 => 
         array (
-          0 => 'probability',
-          1 => 
+          0 => 
           array (
             'name' => 'gmperc_c',
             'label' => 'LBL_GMPERC',

@@ -1,5 +1,5 @@
 <?php
-// created: 2018-06-05 16:56:10
+// created: 2018-06-06 18:10:40
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -142,5 +142,7 @@ $mod_strings = array (
   'LBL_APPROACHFEES_CO_COSTS_ID' => 'Approach Fees (related  ID)',
   'LBL_APPROACHFEES ' => 'Approach Fees',
   'LBL_PARTNERCOST_CO_COSTS_ID' => 'Partner Cost (related  ID)',
+  'LBL_DATENEX' => 'Next Date',
   'LBL_OPPORTUNITIES_BT_PERSONS_1_FROM_BT_PERSONS_TITLE' => 'Sales Persons',
+  'LBL_CO_COSTS_OPPORTUNITIES_1_FROM_CO_COSTS_TITLE' => 'Opportunity Cost',
 );
