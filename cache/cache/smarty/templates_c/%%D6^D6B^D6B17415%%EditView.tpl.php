@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.29, created on 2018-06-05 17:41:14
+<?php /* Smarty version 2.6.29, created on 2018-06-06 18:14:50
          compiled from cache/themes/SuiteR/modules/CO_Costs/EditView.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 38, false),array('modifier', 'default', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 56, false),array('modifier', 'strip_semicolon', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 64, false),array('modifier', 'lookup', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 308, false),array('modifier', 'count', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 410, false),array('function', 'sugar_include', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 44, false),array('function', 'sugar_translate', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 51, false),array('function', 'counter', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 57, false),array('function', 'sugar_getimagepath', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 119, false),array('function', 'sugar_number_format', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 196, false),array('function', 'sugar_getjspath', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 276, false),array('function', 'html_options', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 283, false),array('function', 'sugar_getscript', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 871, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 38, false),array('modifier', 'default', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 49, false),array('modifier', 'strip_semicolon', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 67, false),array('modifier', 'lookup', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 238, false),array('modifier', 'count', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 340, false),array('function', 'sugar_include', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 44, false),array('function', 'counter', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 50, false),array('function', 'sugar_getimagepath', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 53, false),array('function', 'sugar_translate', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 56, false),array('function', 'sugar_number_format', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 152, false),array('function', 'sugar_getjspath', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 206, false),array('function', 'html_options', 'cache/themes/SuiteR/modules/CO_Costs/EditView.tpl', 213, false),)), $this); ?>
 
 
 <script>
@@ -99,21 +99,25 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'escape', 'c
 
 <span id='tabcounterJS'><script>SUGAR.TabFields=new Array();//this will be used to track tabindexes for references</script></span>
 <div id="EditView_tabs"
-class="yui-navset"
 >
-
-<ul class="yui-nav">
-<li class="selected"><a id="tab0" href="javascript:void(0)"><em><?php echo smarty_function_sugar_translate(array('label' => 'LBL_SALE_INFORMATION','module' => 'CO_Costs'), $this);?>
-</em></a></li>
-<li class="selected"><a id="tab1" href="javascript:void(1)"><em><?php echo smarty_function_sugar_translate(array('label' => 'LBL_EDITVIEW_PANEL1','module' => 'CO_Costs'), $this);?>
-</em></a></li>
-</ul>
-<div class="yui-content">
-<div id='tabcontent0'>
+<div >
 <div id="detailpanel_1" class="<?php echo ((is_array($_tmp=@$this->_tpl_vars['def']['templateMeta']['panelClass'])) ? $this->_run_mod_handler('default', true, $_tmp, 'edit view edit508') : smarty_modifier_default($_tmp, 'edit view edit508')); ?>
 ">
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount','start' => 0,'print' => false,'assign' => 'panelFieldCount'), $this);?>
 
+<h4>&nbsp;&nbsp;
+<a href="javascript:void(0)" class="collapseLink" onclick="collapsePanel(1);">
+<img border="0" id="detailpanel_1_img_hide" src="<?php echo smarty_function_sugar_getimagepath(array('file' => "basic_search.gif"), $this);?>
+"></a>
+<a href="javascript:void(0)" class="expandLink" onclick="expandPanel(1);">
+<img border="0" id="detailpanel_1_img_show" src="<?php echo smarty_function_sugar_getimagepath(array('file' => "advanced_search.gif"), $this);?>
+"></a>
+<?php echo smarty_function_sugar_translate(array('label' => 'LBL_SALE_INFORMATION','module' => 'CO_Costs'), $this);?>
+
+<script>
+      document.getElementById('detailpanel_1').className += ' expanded';
+    </script>
+</h4>
 <table width="100%" border="0" cellspacing="1" cellpadding="0"  id='LBL_SALE_INFORMATION'  class="yui3-skin-sam edit view panelContainer">
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
 
@@ -124,6 +128,7 @@ class="yui-navset"
 <?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
 <?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
 :
+<span class="required">*</span>
 </td>
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
@@ -143,13 +148,21 @@ id='<?php echo $this->_tpl_vars['fields']['name']['name']; ?>
 ' size='30' 
 value='<?php echo $this->_tpl_vars['value']; ?>
 ' title=''      accesskey='7'  >
-<td valign="top" id='_label' width='12.5%' data-total-columns="2" scope="col">
-&nbsp;
+<td valign="top" id='currency_id_label' width='12.5%' data-total-columns="2" scope="col">
+<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_CURRENCY','module' => 'CO_Costs'), $this);?>
+<?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
+<?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
 </td>
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
 
 <td valign="top" width='37.5%' data-total-columns="2" >
+<?php echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+<span id='currency_id_span'>
+<?php echo $this->_tpl_vars['fields']['currency_id']['value']; ?>
+</span>
 </tr>
 <?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean(); ?>
 <?php if ($this->_tpl_vars['fieldsUsed'] > 0): ?>
@@ -221,11 +234,12 @@ _<?php echo $this->_tpl_vars['fields']['opportunity_c']['name']; ?>
 		enableQS
 );
 </script>
-<td valign="top" id='currency_id_label' width='12.5%' data-total-columns="2" scope="col">
-<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_CURRENCY','module' => 'CO_Costs'), $this);?>
+<td valign="top" id='amount_label' width='12.5%' data-total-columns="2" scope="col">
+<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_AMOUNT','module' => 'CO_Costs'), $this);?>
 <?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
 <?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
 :
+<span class="required">*</span>
 </td>
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
@@ -233,9 +247,18 @@ _<?php echo $this->_tpl_vars['fields']['opportunity_c']['name']; ?>
 <td valign="top" width='37.5%' data-total-columns="2" >
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
 
-<span id='currency_id_span'>
-<?php echo $this->_tpl_vars['fields']['currency_id']['value']; ?>
-</span>
+
+<?php if (strlen ( $this->_tpl_vars['fields']['amount']['value'] ) <= 0): ?>
+<?php $this->assign('value', $this->_tpl_vars['fields']['amount']['default_value']); ?>
+<?php else: ?>
+<?php $this->assign('value', $this->_tpl_vars['fields']['amount']['value']); ?>
+<?php endif; ?>  
+<input type='text' name='<?php echo $this->_tpl_vars['fields']['amount']['name']; ?>
+' 
+id='<?php echo $this->_tpl_vars['fields']['amount']['name']; ?>
+' size='30'  value='<?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['value']), $this);?>
+' title='' tabindex='0'
+>
 </tr>
 <?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean(); ?>
 <?php if ($this->_tpl_vars['fieldsUsed'] > 0): ?>
@@ -306,136 +329,6 @@ _<?php echo $this->_tpl_vars['fields']['client_c']['name']; ?>
 		enableQS
 );
 </script>
-<td valign="top" id='amount_label' width='12.5%' data-total-columns="2" scope="col">
-<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_AMOUNT','module' => 'CO_Costs'), $this);?>
-<?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
-<?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
-:
-<span class="required">*</span>
-</td>
-<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
-
-
-<td valign="top" width='37.5%' data-total-columns="2" >
-<?php echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
-
-
-<?php if (strlen ( $this->_tpl_vars['fields']['amount']['value'] ) <= 0): ?>
-<?php $this->assign('value', $this->_tpl_vars['fields']['amount']['default_value']); ?>
-<?php else: ?>
-<?php $this->assign('value', $this->_tpl_vars['fields']['amount']['value']); ?>
-<?php endif; ?>  
-<input type='text' name='<?php echo $this->_tpl_vars['fields']['amount']['name']; ?>
-' 
-id='<?php echo $this->_tpl_vars['fields']['amount']['name']; ?>
-' size='30'  value='<?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['value']), $this);?>
-' title='' tabindex='0'
->
-</tr>
-<?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean(); ?>
-<?php if ($this->_tpl_vars['fieldsUsed'] > 0): ?>
-<?php echo $this->_tpl_vars['tableRow']; ?>
-
-<?php endif; ?>
-<?php echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
-
-<?php ob_start(); ?>
-<tr>
-<td valign="top" id='partnername_c_label' width='12.5%' data-total-columns="2" scope="col">
-<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_PARTNERNAME','module' => 'CO_Costs'), $this);?>
-<?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
-<?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
-:
-</td>
-<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
-
-
-<td valign="top" width='37.5%' data-total-columns="2" >
-<?php echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
-
-
-<input type="text" name="<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
-" class="sqsEnabled" tabindex="0" id="<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
-" size="" value="<?php echo $this->_tpl_vars['fields']['partnername_c']['value']; ?>
-" title='' autocomplete="off"  	 >
-<input type="hidden" name="<?php echo $this->_tpl_vars['fields']['partnername_c']['id_name']; ?>
-" 
-id="<?php echo $this->_tpl_vars['fields']['partnername_c']['id_name']; ?>
-" 
-value="<?php echo $this->_tpl_vars['fields']['account_id1_c']['value']; ?>
-">
-<span class="id-ff multiple">
-<button type="button" name="btn_<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
-" id="btn_<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
-" tabindex="0" title="<?php echo smarty_function_sugar_translate(array('label' => 'LBL_ACCESSKEY_SELECT_ACCOUNTS_TITLE'), $this);?>
-" class="button firstChild" value="<?php echo smarty_function_sugar_translate(array('label' => 'LBL_ACCESSKEY_SELECT_ACCOUNTS_LABEL'), $this);?>
-"
-onclick='open_popup(
-"<?php echo $this->_tpl_vars['fields']['partnername_c']['module']; ?>
-", 
-600, 
-400, 
-"", 
-true, 
-false, 
-<?php echo '{"call_back_function":"set_return","form_name":"EditView","field_to_name_array":{"id":"account_id1_c","name":"partnername_c"}}'; ?>
-, 
-"single", 
-true
-);' ><img src="<?php echo smarty_function_sugar_getimagepath(array('file' => "id-ff-select.png"), $this);?>
-"></button><button type="button" name="btn_clr_<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
-" id="btn_clr_<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
-" tabindex="0" title="<?php echo smarty_function_sugar_translate(array('label' => 'LBL_ACCESSKEY_CLEAR_ACCOUNTS_TITLE'), $this);?>
-"  class="button lastChild"
-onclick="SUGAR.clearRelateField(this.form, '<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
-', '<?php echo $this->_tpl_vars['fields']['partnername_c']['id_name']; ?>
-');"  value="<?php echo smarty_function_sugar_translate(array('label' => 'LBL_ACCESSKEY_CLEAR_ACCOUNTS_LABEL'), $this);?>
-" ><img src="<?php echo smarty_function_sugar_getimagepath(array('file' => "id-ff-clear.png"), $this);?>
-"></button>
-</span>
-<script type="text/javascript">
-SUGAR.util.doWhen(
-		"typeof(sqs_objects) != 'undefined' && typeof(sqs_objects['<?php echo $this->_tpl_vars['form_name']; ?>
-_<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
-']) != 'undefined'",
-		enableQS
-);
-</script>
-<td valign="top" id='partneramount_c_label' width='12.5%' data-total-columns="2" scope="col">
-<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_PARTNERAMOUNT','module' => 'CO_Costs'), $this);?>
-<?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
-<?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
-:
-<span class="required">*</span>
-</td>
-<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
-
-
-<td valign="top" width='37.5%' data-total-columns="2" >
-<?php echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
-
-
-<?php if (strlen ( $this->_tpl_vars['fields']['partneramount_c']['value'] ) <= 0): ?>
-<?php $this->assign('value', $this->_tpl_vars['fields']['partneramount_c']['default_value']); ?>
-<?php else: ?>
-<?php $this->assign('value', $this->_tpl_vars['fields']['partneramount_c']['value']); ?>
-<?php endif; ?>  
-<input type='text' name='<?php echo $this->_tpl_vars['fields']['partneramount_c']['name']; ?>
-' 
-id='<?php echo $this->_tpl_vars['fields']['partneramount_c']['name']; ?>
-' size='30' maxlength='26' value='<?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['value']), $this);?>
-' title='' tabindex='0'
->
-</tr>
-<?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean(); ?>
-<?php if ($this->_tpl_vars['fieldsUsed'] > 0): ?>
-<?php echo $this->_tpl_vars['tableRow']; ?>
-
-<?php endif; ?>
-<?php echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
-
-<?php ob_start(); ?>
-<tr>
 <td valign="top" id='country_c_label' width='12.5%' data-total-columns="2" scope="col">
 <?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_COUNTRY','module' => 'CO_Costs'), $this);?>
 <?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
@@ -851,13 +744,101 @@ SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
 "<?php echo ')}'; ?>
 
 </script>
-<td valign="top" id='_label' width='12.5%' data-total-columns="2" scope="col">
-&nbsp;
+</tr>
+<?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean(); ?>
+<?php if ($this->_tpl_vars['fieldsUsed'] > 0): ?>
+<?php echo $this->_tpl_vars['tableRow']; ?>
+
+<?php endif; ?>
+<?php echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
+
+<?php ob_start(); ?>
+<tr>
+<td valign="top" id='partnername_c_label' width='12.5%' data-total-columns="2" scope="col">
+<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_PARTNERNAME','module' => 'CO_Costs'), $this);?>
+<?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
+<?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
 </td>
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
 
 
 <td valign="top" width='37.5%' data-total-columns="2" >
+<?php echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+
+<input type="text" name="<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
+" class="sqsEnabled" tabindex="0" id="<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
+" size="" value="<?php echo $this->_tpl_vars['fields']['partnername_c']['value']; ?>
+" title='' autocomplete="off"  	 >
+<input type="hidden" name="<?php echo $this->_tpl_vars['fields']['partnername_c']['id_name']; ?>
+" 
+id="<?php echo $this->_tpl_vars['fields']['partnername_c']['id_name']; ?>
+" 
+value="<?php echo $this->_tpl_vars['fields']['account_id1_c']['value']; ?>
+">
+<span class="id-ff multiple">
+<button type="button" name="btn_<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
+" id="btn_<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
+" tabindex="0" title="<?php echo smarty_function_sugar_translate(array('label' => 'LBL_ACCESSKEY_SELECT_ACCOUNTS_TITLE'), $this);?>
+" class="button firstChild" value="<?php echo smarty_function_sugar_translate(array('label' => 'LBL_ACCESSKEY_SELECT_ACCOUNTS_LABEL'), $this);?>
+"
+onclick='open_popup(
+"<?php echo $this->_tpl_vars['fields']['partnername_c']['module']; ?>
+", 
+600, 
+400, 
+"", 
+true, 
+false, 
+<?php echo '{"call_back_function":"set_return","form_name":"EditView","field_to_name_array":{"id":"account_id1_c","name":"partnername_c"}}'; ?>
+, 
+"single", 
+true
+);' ><img src="<?php echo smarty_function_sugar_getimagepath(array('file' => "id-ff-select.png"), $this);?>
+"></button><button type="button" name="btn_clr_<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
+" id="btn_clr_<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
+" tabindex="0" title="<?php echo smarty_function_sugar_translate(array('label' => 'LBL_ACCESSKEY_CLEAR_ACCOUNTS_TITLE'), $this);?>
+"  class="button lastChild"
+onclick="SUGAR.clearRelateField(this.form, '<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
+', '<?php echo $this->_tpl_vars['fields']['partnername_c']['id_name']; ?>
+');"  value="<?php echo smarty_function_sugar_translate(array('label' => 'LBL_ACCESSKEY_CLEAR_ACCOUNTS_LABEL'), $this);?>
+" ><img src="<?php echo smarty_function_sugar_getimagepath(array('file' => "id-ff-clear.png"), $this);?>
+"></button>
+</span>
+<script type="text/javascript">
+SUGAR.util.doWhen(
+		"typeof(sqs_objects) != 'undefined' && typeof(sqs_objects['<?php echo $this->_tpl_vars['form_name']; ?>
+_<?php echo $this->_tpl_vars['fields']['partnername_c']['name']; ?>
+']) != 'undefined'",
+		enableQS
+);
+</script>
+<td valign="top" id='partneramount_c_label' width='12.5%' data-total-columns="2" scope="col">
+<?php ob_start(); ?><?php echo smarty_function_sugar_translate(array('label' => 'LBL_PARTNERAMOUNT','module' => 'CO_Costs'), $this);?>
+<?php $this->_smarty_vars['capture']['label'] = ob_get_contents();  $this->assign('label', ob_get_contents());ob_end_clean(); ?>
+<?php echo ((is_array($_tmp=$this->_tpl_vars['label'])) ? $this->_run_mod_handler('strip_semicolon', true, $_tmp) : smarty_modifier_strip_semicolon($_tmp)); ?>
+:
+<span class="required">*</span>
+</td>
+<?php echo smarty_function_counter(array('name' => 'fieldsUsed'), $this);?>
+
+
+<td valign="top" width='37.5%' data-total-columns="2" >
+<?php echo smarty_function_counter(array('name' => 'panelFieldCount'), $this);?>
+
+
+<?php if (strlen ( $this->_tpl_vars['fields']['partneramount_c']['value'] ) <= 0): ?>
+<?php $this->assign('value', $this->_tpl_vars['fields']['partneramount_c']['default_value']); ?>
+<?php else: ?>
+<?php $this->assign('value', $this->_tpl_vars['fields']['partneramount_c']['value']); ?>
+<?php endif; ?>  
+<input type='text' name='<?php echo $this->_tpl_vars['fields']['partneramount_c']['name']; ?>
+' 
+id='<?php echo $this->_tpl_vars['fields']['partneramount_c']['name']; ?>
+' size='30' maxlength='26' value='<?php echo smarty_function_sugar_number_format(array('var' => $this->_tpl_vars['value']), $this);?>
+' title='' tabindex='0'
+>
 </tr>
 <?php $this->_smarty_vars['capture']['tr'] = ob_get_contents();  $this->assign('tableRow', ob_get_contents());ob_end_clean(); ?>
 <?php if ($this->_tpl_vars['fieldsUsed'] > 0): ?>
@@ -865,15 +846,28 @@ SUGAR.AutoComplete.<?php echo $this->_tpl_vars['ac_key']; ?>
 
 <?php endif; ?>
 </table>
+<script type="text/javascript">SUGAR.util.doWhen("typeof initPanel == 'function'", function() { initPanel(1, 'expanded'); }); </script>
 </div>
 <?php if ($this->_tpl_vars['panelFieldCount'] == 0): ?>
 <script>document.getElementById("LBL_SALE_INFORMATION").style.display='none';</script>
 <?php endif; ?>
-</div>    <div id='tabcontent1'>
 <div id="detailpanel_2" class="<?php echo ((is_array($_tmp=@$this->_tpl_vars['def']['templateMeta']['panelClass'])) ? $this->_run_mod_handler('default', true, $_tmp, 'edit view edit508') : smarty_modifier_default($_tmp, 'edit view edit508')); ?>
 ">
 <?php echo smarty_function_counter(array('name' => 'panelFieldCount','start' => 0,'print' => false,'assign' => 'panelFieldCount'), $this);?>
 
+<h4>&nbsp;&nbsp;
+<a href="javascript:void(0)" class="collapseLink" onclick="collapsePanel(2);">
+<img border="0" id="detailpanel_2_img_hide" src="<?php echo smarty_function_sugar_getimagepath(array('file' => "basic_search.gif"), $this);?>
+"></a>
+<a href="javascript:void(0)" class="expandLink" onclick="expandPanel(2);">
+<img border="0" id="detailpanel_2_img_show" src="<?php echo smarty_function_sugar_getimagepath(array('file' => "advanced_search.gif"), $this);?>
+"></a>
+<?php echo smarty_function_sugar_translate(array('label' => 'LBL_EDITVIEW_PANEL1','module' => 'CO_Costs'), $this);?>
+
+<script>
+      document.getElementById('detailpanel_2').className += ' expanded';
+    </script>
+</h4>
 <table width="100%" border="0" cellspacing="1" cellpadding="0"  id='LBL_EDITVIEW_PANEL1'  class="yui3-skin-sam edit view panelContainer">
 <?php echo smarty_function_counter(array('name' => 'fieldsUsed','start' => 0,'print' => false,'assign' => 'fieldsUsed'), $this);?>
 
@@ -1330,6 +1324,7 @@ _<?php echo $this->_tpl_vars['fields']['forwardingagent_c']['name']; ?>
 
 <?php endif; ?>
 </table>
+<script type="text/javascript">SUGAR.util.doWhen("typeof initPanel == 'function'", function() { initPanel(2, 'expanded'); }); </script>
 </div>
 <?php if ($this->_tpl_vars['panelFieldCount'] == 0): ?>
 <script>document.getElementById("LBL_EDITVIEW_PANEL1").style.display='none';</script>
@@ -1401,13 +1396,7 @@ _<?php echo $this->_tpl_vars['fields']['forwardingagent_c']['name']; ?>
 <!-- End Meta-Data Javascript -->
 <script>SUGAR.util.doWhen("document.getElementById('EditView') != null",
         function(){SUGAR.util.buildAccessKeyLabels();});
-</script><?php echo smarty_function_sugar_getscript(array('file' => "cache/include/javascript/sugar_grp_yui_widgets.js"), $this);?>
-
-<script type="text/javascript">
-var EditView_tabs = new YAHOO.widget.TabView("EditView_tabs");
-EditView_tabs.selectTab(0);
-</script>
-<script type="text/javascript">
+</script><script type="text/javascript">
 YAHOO.util.Event.onContentReady("EditView",
     function () { initEditView(document.forms.EditView) });
 //window.setTimeout(, 100);
@@ -1420,7 +1409,7 @@ $(document).ready(function() {
 }
 </script><?php echo '
 <script type="text/javascript">
-addForm(\'EditView\');addToValidate(\'EditView\', \'name\', \'name\', false,\''; ?>
+addForm(\'EditView\');addToValidate(\'EditView\', \'name\', \'name\', true,\''; ?>
 <?php echo smarty_function_sugar_translate(array('label' => 'LBL_NAME','module' => 'CO_Costs','for_js' => true), $this);?>
 <?php echo '\' );
 addToValidate(\'EditView\', \'date_entered_date\', \'date\', false,\'Date Created\' );

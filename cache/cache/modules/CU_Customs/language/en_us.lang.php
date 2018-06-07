@@ -1,5 +1,5 @@
 <?php
-// created: 2018-06-05 16:56:10
+// created: 2018-06-06 18:10:43
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created',
@@ -21,14 +21,14 @@ $mod_strings = array (
   'LBL_ASSIGNED_TO_NAME' => 'Assigned to',
   'LBL_SECURITYGROUPS' => 'Security Groups',
   'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
-  'LBL_LIST_FORM_TITLE' => 'Custom Cost List',
+  'LBL_LIST_FORM_TITLE' => 'Custom List',
   'LBL_MODULE_NAME' => 'Custom Cost',
   'LBL_MODULE_TITLE' => 'Custom Cost',
-  'LBL_HOMEPAGE_TITLE' => 'My Custom Cost',
-  'LNK_NEW_RECORD' => 'Create Custom Cost',
-  'LNK_LIST' => 'View Custom Cost',
-  'LNK_IMPORT_CU_CUSTOMS' => 'Import Custom Cost',
-  'LBL_SEARCH_FORM_TITLE' => ' Custom Cost',
+  'LBL_HOMEPAGE_TITLE' => 'My Customs',
+  'LNK_NEW_RECORD' => 'Create Customs',
+  'LNK_LIST' => 'View Customs',
+  'LNK_IMPORT_CU_CUSTOMS' => 'Import Customs',
+  'LBL_SEARCH_FORM_TITLE' => ' Custom',
   'LBL_HISTORY_SUBPANEL_TITLE' => 'View History',
   'LBL_ACTIVITIES_SUBPANEL_TITLE' => 'Activities',
   'LBL_CU_CUSTOMS_SUBPANEL_TITLE' => 'Custom Cost',

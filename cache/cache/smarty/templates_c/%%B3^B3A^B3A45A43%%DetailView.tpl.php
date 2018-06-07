@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.29, created on 2018-06-05 17:42:28
+<?php /* Smarty version 2.6.29, created on 2018-06-06 18:20:31
          compiled from cache/themes/SuiteR/modules/CO_Costs/DetailView.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_include', 'cache/themes/SuiteR/modules/CO_Costs/DetailView.tpl', 33, false),array('function', 'counter', 'cache/themes/SuiteR/modules/CO_Costs/DetailView.tpl', 38, false),array('function', 'sugar_translate', 'cache/themes/SuiteR/modules/CO_Costs/DetailView.tpl', 48, false),array('function', 'sugar_ajax_url', 'cache/themes/SuiteR/modules/CO_Costs/DetailView.tpl', 58, false),array('function', 'sugar_getimage', 'cache/themes/SuiteR/modules/CO_Costs/DetailView.tpl', 62, false),array('function', 'sugar_number_format', 'cache/themes/SuiteR/modules/CO_Costs/DetailView.tpl', 75, false),array('modifier', 'strip_semicolon', 'cache/themes/SuiteR/modules/CO_Costs/DetailView.tpl', 49, false),array('modifier', 'escape', 'cache/themes/SuiteR/modules/CO_Costs/DetailView.tpl', 291, false),array('modifier', 'url2html', 'cache/themes/SuiteR/modules/CO_Costs/DetailView.tpl', 291, false),array('modifier', 'nl2br', 'cache/themes/SuiteR/modules/CO_Costs/DetailView.tpl', 291, false),)), $this); ?>
@@ -298,7 +298,7 @@ SUGAR.util.doWhen(function(){
 
 
 
-<?php $this->assign('value', "06/05/2018"); ?>
+<?php $this->assign('value', "06/06/2018"); ?>
 <span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['date_entered']['name']; ?>
 "><?php echo $this->_tpl_vars['value']; ?>
 </span>
@@ -391,7 +391,7 @@ SUGAR.util.doWhen(function(){
 
 
 
-<?php $this->assign('value', "06/05/2018"); ?>
+<?php $this->assign('value', "06/07/2018"); ?>
 <span class="sugar_field" id="<?php echo $this->_tpl_vars['fields']['date_modified']['name']; ?>
 "><?php echo $this->_tpl_vars['value']; ?>
 </span>

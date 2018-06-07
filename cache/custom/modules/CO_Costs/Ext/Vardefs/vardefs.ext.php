@@ -120,12 +120,25 @@ $dictionary['CO_Costs']['fields']['country_c']['labelValue']='Country';
 
  
 
- // created: 2018-06-05 17:46:41
+ // created: 2018-06-06 18:10:22
 $dictionary['CO_Costs']['fields']['name']['required']=true;
 $dictionary['CO_Costs']['fields']['name']['inline_edit']=true;
-$dictionary['CO_Costs']['fields']['name']['comments']='Name of the Sale';
+$dictionary['CO_Costs']['fields']['name']['comments']='Name of the Cost';
 $dictionary['CO_Costs']['fields']['name']['merge_filter']='disabled';
 $dictionary['CO_Costs']['fields']['name']['unified_search']=false;
+$dictionary['CO_Costs']['fields']['name']['audited']=false;
 
  
+
+// created: 2018-06-06 16:26:13
+$dictionary["CO_Costs"]["fields"]["co_costs_opportunities_1"] = array (
+  'name' => 'co_costs_opportunities_1',
+  'type' => 'link',
+  'relationship' => 'co_costs_opportunities_1',
+  'source' => 'non-db',
+  'module' => 'Opportunities',
+  'bean_name' => 'Opportunity',
+  'vname' => 'LBL_CO_COSTS_OPPORTUNITIES_1_FROM_OPPORTUNITIES_TITLE',
+);
+
 ?>

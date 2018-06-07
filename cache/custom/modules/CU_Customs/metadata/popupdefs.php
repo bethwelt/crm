@@ -13,22 +13,22 @@ $popupMeta = array (
   3 => 'status',
 ),
     'listviewdefs' => array (
+  'NAME' => 
+  array (
+    'width' => '5%',
+    'label' => 'LBL_NAME',
+    'default' => true,
+    'link' => true,
+    'name' => 'name',
+  ),
   'AMOUNT' => 
   array (
     'type' => 'currency',
     'label' => 'LBL_AMOUNT',
     'currency_format' => true,
-    'width' => '10%',
+    'width' => '5%',
     'default' => true,
     'name' => 'amount',
-  ),
-  'NAME' => 
-  array (
-    'width' => '32%',
-    'label' => 'LBL_NAME',
-    'default' => true,
-    'link' => true,
-    'name' => 'name',
   ),
   'DESCRIPTION' => 
   array (
@@ -38,6 +38,22 @@ $popupMeta = array (
     'width' => '10%',
     'default' => true,
     'name' => 'description',
+  ),
+  'DATE_ENTERED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_ENTERED',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'date_entered',
+  ),
+  'DATE_MODIFIED' => 
+  array (
+    'type' => 'datetime',
+    'label' => 'LBL_DATE_MODIFIED',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'date_modified',
   ),
 ),
 );

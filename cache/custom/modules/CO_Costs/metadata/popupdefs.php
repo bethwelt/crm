@@ -67,15 +67,6 @@ $popupMeta = array (
     'width' => '10%',
     'name' => 'opportunity_c',
   ),
-  'AMOUNT_USDOLLAR' => 
-  array (
-    'width' => '10%',
-    'label' => 'LBL_LIST_AMOUNT',
-    'align' => 'right',
-    'default' => true,
-    'currency_format' => true,
-    'name' => 'amount_usdollar',
-  ),
   'AMOUNT' => 
   array (
     'type' => 'currency',

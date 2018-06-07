@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.29, created on 2018-06-05 16:43:58
+<?php /* Smarty version 2.6.29, created on 2018-06-06 18:18:17
          compiled from cache/themes/SuiteR/modules/Opportunities/SearchFormHeader.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'sugar_getjspath', 'cache/themes/SuiteR/modules/Opportunities/SearchFormHeader.tpl', 4, false),)), $this); ?>

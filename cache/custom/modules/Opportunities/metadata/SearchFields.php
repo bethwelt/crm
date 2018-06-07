@@ -1,5 +1,5 @@
 <?php
-// created: 2018-06-05 13:11:37
+// created: 2018-06-06 16:10:59
 $searchFields['Opportunities'] = array (
   'name' => 
   array (
@@ -219,5 +219,9 @@ $searchFields['Opportunities'] = array (
   array (
     'query_type' => 'default',
     'enable_range_search' => true,
+  ),
+  'description' => 
+  array (
+    'query_type' => 'default',
   ),
 );

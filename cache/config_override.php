@@ -61,5 +61,5 @@ $sugar_config['lock_subpanels'] = true;
 $sugar_config['dbconfigoption']['collation'] = 'utf8_general_ci';
 $sugar_config['default_currency_iso4217'] = 'CFA franc';
 $sugar_config['default_currency_name'] = 'CFA franc';
-$sugar_config['default_currency_symbol'] = '¢';
+$sugar_config['default_currency_symbol'] = 'CFA';
 /***CONFIGURATOR***/

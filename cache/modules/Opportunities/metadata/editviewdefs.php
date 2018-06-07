@@ -40,8 +40,8 @@
 $viewdefs['Opportunities']['EditView'] = array(
     'templateMeta' => array('maxColumns' => '2', 
                             'widths' => array(
-                                            array('label' => '10', 'field' => '30'), 
-                                            array('label' => '10', 'field' => '30')
+                                            array('label' => '30', 'field' => '30'), 
+                                            array('label' => '30', 'field' => '30')
                                             ),
     'javascript' => '{$PROBABILITY_SCRIPT}',
 ),

@@ -29,12 +29,12 @@
       array (
         'boost' => 3,
       ),
-      'audited' => true,
+      'audited' => false,
       'merge_filter' => 'disabled',
       'required' => true,
       'importable' => 'required',
       'inline_edit' => true,
-      'comments' => 'Name of the Sale',
+      'comments' => 'Name of the Cost',
     ),
     'date_entered' => 
     array (
@@ -949,6 +949,16 @@
       'parentenum' => '',
       'id' => 'CO_Costscountry_c',
       'custom_module' => 'CO_Costs',
+    ),
+    'co_costs_opportunities_1' => 
+    array (
+      'name' => 'co_costs_opportunities_1',
+      'type' => 'link',
+      'relationship' => 'co_costs_opportunities_1',
+      'source' => 'non-db',
+      'module' => 'Opportunities',
+      'bean_name' => 'Opportunity',
+      'vname' => 'LBL_CO_COSTS_OPPORTUNITIES_1_FROM_OPPORTUNITIES_TITLE',
     ),
   ),
   'relationships' => 

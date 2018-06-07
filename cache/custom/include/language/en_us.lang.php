@@ -33,9 +33,21 @@ $GLOBALS['app_list_strings']['product_def_list']=array (
 );
 $app_list_strings['moduleListSingular']['INV_Inventories']='Inventory';
 $app_list_strings['moduleList']['INV_Inventories']='Inventory';
-
+$GLOBALS['app_list_strings']['countries_dom']=array (
+  '' => '',
+  'CAPE VERDI ISLANDS' => 'CAPE VERDI ISLANDS',
+  'GUINEA' => 'GUINEA',
+  'MALI' => 'MALI',
+  'SENEGAL' => 'SENEGAL',
+  'GUINEABISSAU' => 'GUINEA BISSAU',
+);
 $GLOBALS['app_list_strings']['type_list']=array (
   '' => '',
-  'Service' => 'Service',
-  'Product' => 'Product',
+  'ATM' => 'ATM',
+  'PDQ' => 'PDQ',
+  'SOFTWARE' => 'SOFTWARE',
+  'SERVICING' => 'SERVICING',
+  'MAINTAINANCE' => 'MAINTAINANCE',
 );
+$app_list_strings['moduleList']['CU_Customs']='Customs';
+$app_list_strings['moduleListSingular']['CU_Customs']='Custom';
